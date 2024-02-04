@@ -2,26 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Til: Sania</title>
   <style>
     body {
-      background-image: url("background-image.jpg"); /* Velg bakgrunnsbilde */
+      background-image: url("Valentine/background-image.jpg");
       background-size: cover;
       text-align: center;
       font-family: 'Arial', sans-serif;
       color: #5b0d85;
+      font-size: 4vw;
     }
     #question {
-      font-size: 45px;
-      margin-top: 50px;
+      font-size: 6vw;
+      margin-top: 5vw;
     }
     #options {
-      margin-top: 50px;
+      margin-top: 5vw;
+    }
+    button {
+      font-size: 3vw;
+      padding: 2vw 4vw;
     }
     #message {
-      margin-top: 45px;
-      font-size: 30px;
+      margin-top: 5vw;
+      font-size: 4vw;
     }
   </style>
 </head>
@@ -42,7 +47,7 @@
       messageElement.innerHTML = "WOOOOW jeg brukte ikke så lang tid på å lage denne nettsiden kun for at du skal si nei🙄 PRØV IGJEN! ";
       setTimeout(function() {
         messageElement.innerHTML = "";
-      }, 6000); // Clears the message after 6 seconds
+      }, 6000);
     }
   }
 </script>
