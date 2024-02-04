@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Til: Sania</title>
-  <style>
-    body {
-      background-image: url("background-image.jpg");
-      background-size: cover;
-      text-align: center;
-      font-family: 'Arial', sans-serif;
-      color: #5b0d85;
-      font-size: 4vw;
-    }
-    #question {
-      font-size: 6vw;
-      margin-top: 5vw;
-    }
-    #options {
-      margin-top: 5vw;
-    }
-    button {
-      font-size: 3vw;
-      padding: 2vw 4vw;
-    }
-    #message {
-      margin-top: 5vw;
-      font-size: 4vw;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Til: Sania</title>
+    <style>
+        body {
+            background-image: url("background-image.jpg");
+            background-size: cover;
+            background-attachment: fixed; /* Fix the background in place */
+            background-position: center; /* Center the background image */
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #5b0d85;
+            font-size: 4vw;
+        }
+        #question {
+            font-size: 6vw;
+            margin-top: 5vw;
+        }
+        #options {
+            margin-top: 5vw;
+        }
+        button {
+            font-size: 3vw;
+            padding: 2vw 4vw;
+        }
+        #message {
+            margin-top: 5vw;
+            font-size: 4vw;
+        }
+    </style>
 </head>
 <body>
-<div id="question">Hei Sania❤️ will you be my valentine?🌹🌷</div>
-<div id="options">
-  <button onclick="answer('yes')">OMG JAAA</button>
-  <button onclick="answer('no')">EW NEI</button>
-</div>
-<div id="message"></div>
+    <div id="question">Hei Sania❤️ will you be my valentine?🌹🌷</div>
+    <div id="options">
+        <button onclick="answer('yes')">OMG JAAA</button>
+        <button onclick="answer('no')">EW NEI</button>
+    </div>
+    <div id="message"></div>
 
-<script>
-  function answer(choice) {
-    var messageElement = document.getElementById('message');
-    if (choice === 'yes') {
-      messageElement.innerHTML = "Yaaay! vi ses 14 februar🤭 Gleder meg❤️";
-    } else if (choice === 'no') {
-      messageElement.innerHTML = "WOOOOW jeg brukte ikke så lang tid på å lage denne nettsiden kun for at du skal si nei🙄 PRØV IGJEN! ";
-      setTimeout(function() {
-        messageElement.innerHTML = "";
-      }, 6000);
-    }
-  }
-</script>
+    <script>
+        function answer(choice) {
+            var messageElement = document.getElementById('message');
+            if (choice === 'yes') {
+                messageElement.innerHTML = "Yaaay! vi ses 14 februar🤭 Gleder meg❤️";
+            } else if (choice === 'no') {
+                messageElement.innerHTML = "WOOOOW jeg brukte ikke så lang tid på å lage denne nettsiden kun for at du skal si nei🙄 PRØV IGJEN! ";
+                setTimeout(function() {
+                    messageElement.innerHTML = "";
+                }, 6000);
+            }
+        }
+    </script>
 </body>
 </html>
